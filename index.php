@@ -1,5 +1,12 @@
 <?php
 header('Content-Type: application/json');
-$dataArray[]= ['team_a' => "Peru", 'team_b' => "Escocia", 'prediction_a' => "71%", 'prediction_b' => "20%"];
+$dataArray= [
+  'team_a' => "Alemania",
+  'team_b' => "Mexico",
+  'winner' => [
+    'team' =>"Alemania",
+    'prediction' => "72%"
+  ],
+];
 echo  json_encode($dataArray);
 ?>
